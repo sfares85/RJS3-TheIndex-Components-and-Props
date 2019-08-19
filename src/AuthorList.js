@@ -3,7 +3,7 @@ import AuthorCard from "./AuthorCard";
 import { tsPropertySignature } from "@babel/types";
 function AuthorList(props) {
   const authorList = props.authors.map(author => (
-    <AuthorCard key={author.name} author={author} />
+    <AuthorCard key={author.first_name} author={author} />
   ));
 
   return (
